@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".setting">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/baseline_arrow_back_ios_new_24"
+        app:titleTextColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textViewSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="32dp"
+        android:text="Settings"
+        android:textColor="@color/pink"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="Account"
+        android:textColor="@color/pink"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewSettings" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/accountLayout"
+        android:layout_width="370dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/ffd6e0"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewAccount">
+
+        <ImageView
+
+            android:id="@+id/imageViewEditProfile"
+
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="10px"
+            android:src="@drawable/baseline_edit_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+
+            android:id="@+id/textViewEditProfile"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_margin="10px"
+            android:paddingStart="10px"
+            android:text="Edit profile"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/imageViewSecurity"
+            app:layout_constraintStart_toEndOf="@id/imageViewEditProfile"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewSecurity"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="10px"
+            android:src="@drawable/baseline_security_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewEditProfile" />
+
+        <TextView
+            android:id="@+id/textViewSecurity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10px"
+            android:paddingStart="10px"
+            android:text="Security"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/imageViewSecurity"
+            app:layout_constraintTop_toBottomOf="@id/textViewEditProfile" />
+
+        <ImageView
+            android:id="@+id/imageViewNotifications"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="10px"
+            android:src="@drawable/baseline_notifications_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewSecurity" />
+
+        <TextView
+            android:id="@+id/textViewNotifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10px"
+            android:paddingStart="10px"
+            android:text="Notifications"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/imageViewNotifications"
+            app:layout_constraintTop_toBottomOf="@id/textViewSecurity" />
+
+        <ImageView
+            android:id="@+id/imageViewPrivacy"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="10px"
+            android:src="@drawable/baseline_https_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewNotifications" />
+
+        <TextView
+            android:id="@+id/textViewPrivacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10px"
+            android:paddingStart="10px"
+            android:text="Privacy"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/imageViewPrivacy"
+            app:layout_constraintTop_toBottomOf="@id/textViewNotifications" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textViewSupport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="Support &amp; About"
+        android:textColor="@color/pink"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/accountLayout" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/supportLayout"
+        android:layout_width="364dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/ffd6e0"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewSupport">
+
+        <ImageView
+            android:id="@+id/imageViewMySubscription"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/baseline_backup_table_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewMySubscription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10px"
+            android:paddingStart="10px"
+            android:text="My Subscription"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/imageViewHelpSupport"
+            app:layout_constraintStart_toEndOf="@id/imageViewMySubscription"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewHelpSupport"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/baseline_help_outline_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewMySubscription" />
+
+        <TextView
+            android:id="@+id/textViewHelpSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10px"
+            android:paddingStart="10px"
+            android:text="Help and Support"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/imageViewHelpSupport"
+            app:layout_constraintTop_toBottomOf="@id/textViewMySubscription" />
+
+        <ImageView
+            android:id="@+id/imageViewTermsPolicies"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/baseline_health_and_safety_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewHelpSupport" />
+
+        <TextView
+            android:id="@+id/textViewTermsPolicies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10px"
+            android:paddingStart="10px"
+            android:text="Terms and Policies"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/imageViewTermsPolicies"
+            app:layout_constraintTop_toBottomOf="@id/textViewHelpSupport" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textViewCacheCellular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="Cache &amp; cellular"
+        android:textColor="@color/pink"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/supportLayout" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cacheLayout"
+        android:layout_width="358dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/ffd6e0"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewCacheCellular">
+
+        <ImageView
+            android:id="@+id/imageViewFreeUpSpace"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="10px"
+            android:src="@drawable/baseline_delete_outline_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewFreeUpSpace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10px"
+            android:paddingStart="10px"
+            android:text="Free up space"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/imageViewDataSaver"
+            app:layout_constraintStart_toEndOf="@id/imageViewFreeUpSpace"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewDataSaver"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="10px"
+            android:src="@drawable/baseline_donut_large_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewFreeUpSpace" />
+
+        <TextView
+            android:id="@+id/textViewDataSaver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10px"
+            android:paddingStart="10px"
+            android:text="Data Saver"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/imageViewDataSaver"
+            app:layout_constraintTop_toBottomOf="@id/textViewFreeUpSpace" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textViewActions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Actions"
+        android:textColor="@color/pink"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cacheLayout" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/actionsLayout"
+        android:layout_width="354dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/ffd6e0"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewActions">
+
+        <ImageView
+            android:id="@+id/imageViewReportProblem"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/baseline_assistant_photo_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewReportProblem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10px"
+            android:paddingStart="10px"
+            android:text="Report a problem"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/imageViewAddAccount"
+            app:layout_constraintStart_toEndOf="@id/imageViewReportProblem"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewAddAccount"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/baseline_person_add_alt_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewReportProblem" />
+
+        <TextView
+            android:id="@+id/textViewAddAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10px"
+            android:text="Add account"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/imageViewAddAccount"
+            app:layout_constraintTop_toBottomOf="@id/textViewReportProblem" />
+
+        <ImageView
+            android:id="@+id/imageViewLogOut"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/baseline_logout_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewAddAccount" />
+
+        <TextView
+            android:id="@+id/textViewLogOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10px"
+            android:text="Log out"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/imageViewLogOut"
+            app:layout_constraintTop_toBottomOf="@id/textViewAddAccount" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

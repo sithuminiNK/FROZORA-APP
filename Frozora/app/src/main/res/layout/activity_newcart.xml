@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:backgroundTint="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".newcart">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="25dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/itemLayout1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:navigationIcon="@drawable/baseline_arrow_back_ios_new_24"
+        app:titleTextColor="@color/white" />
+
+    <TextView
+        android:id="@+id/cartTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="37dp"
+        android:text="My Cart"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/itemLayout1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/itemLayout1"
+        android:layout_width="380dp"
+        android:layout_height="144dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/item_background"
+        android:elevation="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cartTitle">
+
+        <ImageView
+            android:id="@+id/itemImage1"
+            android:layout_width="68dp"
+            android:layout_height="119dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:contentDescription="Item Image"
+            android:src="@drawable/cheryice"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/itemName1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="@string/cherry_strawberry"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/itemImage1"
+            app:layout_constraintTop_toTopOf="@id/itemImage1" />
+
+        <TextView
+            android:id="@+id/itemDescription1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/thanks_to_its_refreshing_delicate_taste_and_melt_in_your_mouth_texture_it_will_appeal_to_big_and_small_gourmets"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/itemName1"
+            app:layout_constraintTop_toBottomOf="@id/itemName1" />
+
+        <TextView
+            android:id="@+id/itemQuantity1"
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/_1"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@id/itemDescription1"
+            app:layout_constraintTop_toBottomOf="@id/itemDescription1" />
+
+        <TextView
+            android:id="@+id/itemPrice1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="4dp"
+            android:text="@string/price"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/itemQuantity1"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/itemLayout2"
+        android:layout_width="388dp"
+        android:layout_height="137dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/item_background"
+
+        android:elevation="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/itemLayout1">
+
+        <ImageView
+            android:id="@+id/itemImage2"
+            android:layout_width="67dp"
+            android:layout_height="104dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="Item Image"
+            android:src="@drawable/chocolate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/itemName2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="Double Choc
+Hazelnut"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/itemImage2"
+            app:layout_constraintTop_toTopOf="@id/itemImage2" />
+
+        <TextView
+            android:id="@+id/itemDescription2"
+            android:layout_width="289dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:text="Thanks to its refreshing delicate taste and melt-in-your-mouth texture, it will appeal to big and small gourmets"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/itemName2"
+            app:layout_constraintTop_toBottomOf="@id/itemName2" />
+
+        <TextView
+            android:id="@+id/itemQuantity2"
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:text="- 1 +"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@id/itemDescription2"
+            app:layout_constraintTop_toBottomOf="@id/itemDescription2" />
+
+        <TextView
+            android:id="@+id/itemPrice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="88dp"
+            android:layout_marginBottom="4dp"
+            android:text="Rs.250.00"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/itemQuantity2"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/deleteItem1"
+            android:layout_width="59dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/deletee_foreground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" /> <!-- Replace with your trash icon -->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Checkout Button -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/itemLayout3"
+        android:layout_width="387dp"
+        android:layout_height="123dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/item_background"
+        android:elevation="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/itemLayout2">
+
+        <ImageView
+            android:id="@+id/itemImage3"
+            android:layout_width="80dp"
+            android:layout_height="103dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="Item Image"
+            android:src="@drawable/mint"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/itemName3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="Pistachio Chocolate Vanilla"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/itemImage3"
+            app:layout_constraintTop_toTopOf="@id/itemImage3" />
+
+        <TextView
+            android:id="@+id/itemDescription3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/thanks_to_its_refreshing_delicate_taste_and_melt_in_your_mouth_texture_it_will_appeal_to_big_and_small_gourmets"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/itemName3"
+            app:layout_constraintTop_toBottomOf="@id/itemName3" />
+
+        <TextView
+            android:id="@+id/itemQuantity3"
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:text="+ 1 -"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@id/itemDescription3"
+            app:layout_constraintTop_toBottomOf="@id/itemDescription3" />
+
+        <TextView
+            android:id="@+id/itemPrice3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text=".Rs.350.00 "
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/itemQuantity3"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/checkoutButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="61dp"
+        android:backgroundTint="@color/pink"
+        android:text="Checkout"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">FloraFresh2</string>
+    <string name="password">password</string>
+    <string name="username">username</string>
+    <string name="welcome_back">welcome Back!</string>
+    <string name="sign_in">Sign In</string>
+    <string name="forgot_password">Forgot password ?</string>
+    <string name="thanks_to_its_refreshing_delicate_taste_and_melt_in_your_mouth_texture_it_will_appeal_to_big_and_small_gourmets">Thanks to its refreshing delicate taste and melt-in-your-mouth texture, it will appeal to big and small gourmets</string>
+    <string name="cherry_strawberry">Cherry Strawberry</string>
+    <string name="_1">- 1 +</string>
+    <string name="price">Rs.300.00</string>
+    <string name="strawberry">Strawberry</string>
+    <string name="welcome">Welcome!</string>
+    <string name="your_ultimate_ice_cream_paradise_right_in_your_pocket">“Your ultimate ice cream paradise, right in your pocket.”</string>
+    <string name="a_big_creamy_ice_cream_scoop_sits_atop_a_crisp_waffle_cone_glistening_invitingly_colorful_sprinkles_are_scattered_over_it_adding_a_playful_and_fun_touch_at_the_top_a_smiling_face_gives_it_a_cheerful_friendly_personality_making_it_impossible_not_to_smile">A big, creamy ice cream scoop sits atop a crisp waffle cone, glistening invitingly. Colorful sprinkles are scattered over it, adding a playful and fun touch. At the top, a smiling face gives it a cheerful, friendly personality, making it impossible not to smile..</string>
+    <string name="start_now">Start Now</string>
+    <string name="next">Next</string>
+    <string name="a_tall_waffle_cone_holds_a_delightful_tower_of_ice_cream_scoops_each_in_vibrant_mouthwatering_colors_from_creamy_vanilla_to_rich_chocolate_and_playful_strawberry_every_layer_looks_irresistible_the_mix_of_shades_creates_a_joyful_eye_catching_treat_that_feels_both_fun_and_delicious">A tall waffle cone holds a delightful tower of ice cream scoops, each in vibrant, mouthwatering colors. From creamy vanilla to rich chocolate and playful strawberry, every layer looks irresistible. The mix of shades creates a joyful, eye-catching treat that feels both fun and delicious..</string>
+    <string name="from_classic_vanilla_to_exotic_new_tastes_we_ve_got_it_all">From classic vanilla to exotic new tastes, we’ve got it all!</string>
+    <string name="discover_every_flavor">Discover Every Flavor</string>
+    <string name="order_your_favorites">Order Your Favorites</string>
+    <string name="fast_delivery_to_your_doorstep_treat_yourself_anytime">Fast delivery to your doorstep. Treat yourself anytime</string>
+    <string name="freshly_packed_ice_creams_arrive_at_your_doorstep_in_no_time_ensuring_maximum_delight_the_quick_delivery_keeps_every_scoop_cool_creamy_and_ready_to_enjoy_it_s_speed_freshness_and_happiness_all_delivered_with_a_smile">Freshly packed ice creams arrive at your doorstep in no time, ensuring maximum delight. The quick delivery keeps every scoop cool, creamy, and ready to enjoy. It’s speed, freshness, and happiness all delivered with a smile..</string>
+    <string name="get_started">Get Started</string>
+    <string name="details">Details</string>
+    <string name="neapolitan_ice_cream_is_a_classic_frozen_dessert_that_brings_together_three_beloved_flavors_creamy_vanilla_rich_chocolate_and_sweet_strawberry_layered_side_by_side_in_a_single_container_offering_a_perfect_balance_of_taste_and_color_in_every_scoop">Neapolitan ice cream is a classic frozen dessert that brings together three beloved flavors—creamy vanilla, rich chocolate, and sweet strawberry—layered side by side in a single container, offering a perfect balance of taste and color in every scoop..</string>
+    <string name="add_to_cart">Add To Cart</string>
+    <string name="rs_350_00">Rs.350.00</string>
+    <string name="_4_4_reviews">4.4 reviews</string>
+    <string name="neapolitan">Neapolitan</string>
+    <string name="payment">Payment</string>
+    <string name="check_out_details">Check Out Details</string>
+</resources>
+
+
+
+
