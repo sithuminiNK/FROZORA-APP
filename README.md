@@ -79,10 +79,3 @@ All static text is managed through `res/values/strings.xml` rather than being ha
 - `colors.xml` and `strings.xml` resource files
 - Intent-based navigation between screens
 
-
----
-
-## 👤 Author
-
-**Nirasha**
-BSc (Hons) IT – Data Science, SLIIT
